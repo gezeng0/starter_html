@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel</title>
+    <title>Travel 🌎</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href = "#main-content">Skip to Main Content</a>
+    <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
     <header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul>
 				<!-- Since I am on the index file I added class = action to the link to index. -->
 				<!-- For this homework leave the class on index for all three pages. -->
-				<li class="active"><a href = "travel.html">Travel</a></li>
 				<li><a href = "index.html" >Pets</a></li>
 				<li><a href = "recipes.html">Recipes</a></li>
+                <li class="active"><a class = "current" href = "travel.html">Travel</a></li>
 			</ul>
 		</nav>
 		<!-- The h1 is a semantic tag that aids accessibility -->
@@ -25,169 +27,166 @@
     <main id="main-content">
         <div>
             <h2>Yellowstone</h2>
-    
-            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
-            <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
-
+            <div class="grid-container-top">
+                <img class = "gif-element" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+                <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
+            </div>
             <h3>Geographical Location: North America</h3>
             <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
             <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
-                <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
-                <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
-            </figure>
-
-
-            <figure>
-                <video width="200"  controls>
-                    <source src="images/yellowstone_prism.MOV">
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
-            </figure>
-
-
-            <figure>
-                <video width="200"  controls>
-                    <source src="images/yellowstone_buffalo.MOV">
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
-                
-                <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
-            </figure>
+            <div class="grid-container-travel">
+                <figure>
+                    <img src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
+                    <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
+                    <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
+                </figure>
+                <figure>
+                    <video width="200"  controls>
+                        <source src="images/yellowstone_prism.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+                </figure>
+                <figure>
+                    <video width="200"  controls>
+                        <source src="images/yellowstone_buffalo.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
+                    <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+                </figure>
+            </div>
             <!-- Colleen van Lent -->
         </div>
         <div>
             <h2>Chiangmai, Thailand</h2>
-    
-            <img src="images/chiangmaigif.gif" width="400" alt="paper lights in the sky">
-            <img src="images/chiangmai.jpeg" width = "400" alt="animated Chiangmai">
-
+            <div class="grid-container-top">
+                <img class = "gif-element" src="images/chiangmaigif.gif" width="400" alt="paper lights in the sky">
+                <img src="images/chiangmai.jpeg" width = "400" alt="animated Chiangmai">
+            </div>
             <h3>Geographical Location: Asia</h3>
             <p>Chiang Mai, nestled in the lush hills of northern Thailand, is a city that captivates with its unique blend of cultural richness and natural beauty. Situated approximately 700 kilometers north of Bangkok, Chiang Mai is the largest city in the region and serves as the capital of the province of the same name.</p>
             <p>The heart of Chiang Mai beats with a rich history that dates back over 700 years. Founded in 1296, the city was originally the capital of the ancient Lanna Kingdom. Today, remnants of its storied past are scattered throughout the city, from the ancient temples that dot the landscape to the preserved city walls and moats that harken back to a bygone era.</p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/chiangmai1.jpeg" width = "200" alt="colorful hot balloons in the heart of Chiang Mai">
-                <figcaption>You can see hot balloons in Chiang Mai as well. </figcaption>
-            </figure>
+            <div class="grid-container-travel">
+                <figure>
+                    <img src="images/chiangmai1.jpeg" width = "200" alt="colorful hot balloons in the heart of Chiang Mai">
+                    <figcaption>You can see hot balloons in Chiang Mai as well. </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/chiangmai2.jpeg" width = "200" alt="several elephants and smiley volunteers in the forest">
-                <figcaption>You can see cute elephants in Chiang Mai! Isn’t that fun?!
-                </figcaption>
-            </figure>
+                <figure>
+                    <img src="images/chiangmai2.jpeg" width = "200" alt="several elephants and smiley volunteers in the forest">
+                    <figcaption>You can see cute elephants in Chiang Mai! Isn’t that fun?!
+                    </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/chiangmai3.jpeg" width = "200" alt="ancient temple of Chiang Mai ">
-                <figcaption>There are so many beautiful temples in Chiang Mai.</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/chiangmai3.jpeg" width = "200" alt="ancient temple of Chiang Mai ">
+                    <figcaption>There are so many beautiful temples in Chiang Mai.</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/chiangmai4.jpeg" width = "200" alt="several monks walk by the street">
-                <figcaption> Be respectful to the monks. </figcaption>
-            </figure>
+                <figure>
+                    <img src="images/chiangmai4.jpeg" width = "200" alt="several monks walk by the street">
+                    <figcaption> Be respectful to the monks. </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/chiangmai5.jpeg" width = "200" alt="several delicious dishes from Chiang Mai">
-                <figcaption>And don’t forget to treat yourself with delicious Thai food!</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/chiangmai5.jpeg" width = "200" alt="several delicious dishes from Chiang Mai">
+                    <figcaption>And don’t forget to treat yourself with delicious Thai food!</figcaption>
+                </figure>
+            </div>
             <!-- Cindy Ye -->
         </div>
         <div>
             <h2>Bangkok, Thailand</h2>
-    
-            <img src="images/bangkok_gif.gif" width="400" alt="sunset bangkok">
-            <img src="images/bangkok-nongif.jpeg" width = "400" alt="beautiful sky in bangkok">
-
+            <div class="grid-container-top">
+                <img class = "gif-element" src="images/bangkok_gif.gif" width="400" alt="sunset bangkok">
+                <img src="images/bangkok-nongif.jpeg" width = "400" alt="beautiful sky in bangkok">
+            </div>
             <h3>Geographical Location: Southeast Asia</h3>
             <p>Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. It is officially known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep.</p>
             <p>Bangkok welcomes more visitors than any other city in the world and it doesn’t take long to realize why. Bangkok is a city of contrasts with action at every turn. Marvel at the gleaming temples, catch a tuk tuk through bustling Chinatown or take a longtail boat through floating markets. Food is another Bangkok highlight, from local dishes served at humble street stalls to haute cuisine at romantic rooftop restaurants.</p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/khlong_lat_mayom.jpeg" width = "200" alt="Khlong Lat Mayom water market">
-                <figcaption>Khlong Lat Mayom, one of the best floating markets in Bangkok.It is most famous for its food. Try snakehead fish and the shrimps.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/grand_palace.jpeg" width = "200" alt="White houses with golden top">
-                <figcaption>The Grand Palace is a complex of buildings at the heart of Bangkok.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/khao_san_road.jpeg" width = "200" alt="Busy street of daytime khao san road">
-                <figcaption>Khao San road, which now represents a series of streets, is a place in downtown Bangkok where backpackers and tourists are immediately drawn to from when they first touch down in the airport.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/wat_arun.jpeg" width = "200" alt="Wat Arun temple">
-                <figcaption> Wat Arun is one of the most popular and well-known places of worship. Famous for its iridescent glow when first light hits its porcelain finish at dawn, it also resembles an ancient city at first glance.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/bangkok_marble.jpg" width = "200" alt="marble temple">
-                <figcaption>And don’t forget to go see thee marble temples!</figcaption>
-            </figure>
+            <div class="grid-container-travel">
+                <figure>
+                    <img src="images/khlong_lat_mayom.jpeg" width = "200" alt="Khlong Lat Mayom water market">
+                    <figcaption>Khlong Lat Mayom, one of the best floating markets in Bangkok.It is most famous for its food. Try snakehead fish and the shrimps.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/grand_palace.jpeg" width = "200" alt="White houses with golden top">
+                    <figcaption>The Grand Palace is a complex of buildings at the heart of Bangkok.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/khao_san_road.jpeg" width = "200" alt="Busy street of daytime khao san road">
+                    <figcaption>Khao San road, which now represents a series of streets, is a place in downtown Bangkok where backpackers and tourists are immediately drawn to from when they first touch down in the airport.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wat_arun.jpeg" width = "200" alt="Wat Arun temple">
+                    <figcaption> Wat Arun is one of the most popular and well-known places of worship. Famous for its iridescent glow when first light hits its porcelain finish at dawn, it also resembles an ancient city at first glance.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bangkok_marble.jpg" width = "200" alt="marble temple">
+                    <figcaption>And don’t forget to go see thee marble temples!</figcaption>
+                </figure>
+            </div>
             <!-- Jinjin si -->
         </div>
         <div>
             <h2>Monteverde, Costa Rica</h2>
-    
-            <img src="images/Monteverde.gif" width="400" alt="green trees in Monteverde">
-            <img src="images/Monteverde_skyline.jpeg" width = "400" alt="skyline in Monteverde">
-
+            <div class="grid-container-top">
+                <img class = "gif-element" src="images/Monteverde.gif" width="400" alt="green trees in Monteverde">
+                <img src="images/Monteverde_skyline.jpeg" width = "400" alt="skyline in Monteverde">
+            </div>
             <h3>Geographical Location: South America</h3>
             <p>Monteverde, Costa Rica is situated 4,662 feet above sea level. Monteverde’s famed cloud forests are the byproduct of fog (a thick, low-hanging cloud) tangling amongst the leaves and branches of the forest canopy. Trails and hanging bridges offer a close-up view of the diverse variety of animals and plants living in the forest.
             </p>
             <p>One of the main tourist locations in Monteverde is the town of Santa Elena, which is not only home to a variety of restaurants with delicious food, but a serpentarium as well. You can enjoy hiking, ziplining, and observing the native wildlife while staying in Monteverde. It’s a truly beautiful place.</p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/Monteverde_cloud_forest.jpeg" width = "200" alt="Clouds rolling through a line of trees.">
-                <figcaption>You can hike trails and zipline through the Monteverde cloud forests.
-                </figcaption>
-            </figure>
+            <div class="grid-container-travel">
+                <figure>
+                    <img src="images/Monteverde_cloud_forest.jpeg" width = "200" alt="Clouds rolling through a line of trees.">
+                    <figcaption>You can hike trails and zipline through the Monteverde cloud forests.
+                    </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/Monteverde_hanging_bridges.jpeg" width = "200" alt="An image of a bridge hanging above the cloud forest canopy in Monteverde.">
-                <figcaption>Hanging bridges over the cloud forests allow for a birds-eye view. 
-                </figcaption>
-            </figure>
+                <figure>
+                    <img src="images/Monteverde_hanging_bridges.jpeg" width = "200" alt="An image of a bridge hanging above the cloud forest canopy in Monteverde.">
+                    <figcaption>Hanging bridges over the cloud forests allow for a birds-eye view. 
+                    </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/Monteverde_hummingbirds.jpeg" width = "200" alt="A hummingbird with green feathers drinking from a pink and orange flower.">
-                <figcaption>You can visit hummingbirds at Monteverde’s Selvatura Park’s hummingbird garden, which exhibits over 14 different species of hummingbird.  
-                </figcaption>
-            </figure>
+                <figure>
+                    <img src="images/Monteverde_hummingbirds.jpeg" width = "200" alt="A hummingbird with green feathers drinking from a pink and orange flower.">
+                    <figcaption>You can visit hummingbirds at Monteverde’s Selvatura Park’s hummingbird garden, which exhibits over 14 different species of hummingbird.  
+                    </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/Monteverde_el_tigre_waterfalls.jpeg" width = "200" alt="A person in red standing in front of one of El Tigre’s four waterfalls. ">
-                <figcaption> El Tigre Waterfalls is made up of four falls, which are connected by trails and hanging bridges. 
-                </figcaption>
-            </figure>
+                <figure>
+                    <img src="images/Monteverde_el_tigre_waterfalls.jpeg" width = "200" alt="A person in red standing in front of one of El Tigre’s four waterfalls. ">
+                    <figcaption> El Tigre Waterfalls is made up of four falls, which are connected by trails and hanging bridges. 
+                    </figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/monkey.jpg" width = "200" alt="monkeys at Monteverde">
-                <figcaption>And don’t forget to go see cute monkeys in Monteverde!</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/monkey.jpg" width = "200" alt="monkeys at Monteverde">
+                    <figcaption>And don’t forget to go see cute monkeys in Monteverde!</figcaption>
+                </figure>
+            </div>
             <!-- Kay Malan -->
         </div>
 
